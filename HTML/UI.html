@@ -16,7 +16,13 @@
 
 
 <div class="card">
-    <div class="card-header">
+   
+  <div class="card-header">
+      <div class="close-placement"> 
+          <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              <span aria-hidden="true">&times;</span>
+          </button>
+      </div>
         <div class="values">00:00:00</div>
         <div class="buttonContainers">
             <button type="button" class="btn btn-warning">Pause</button>
@@ -24,33 +30,51 @@
             <button type="button" class="btn btn-danger">Stop</button>
         </div>
     </div>
-    <div class="card-body">
-      <div class="row">
-        
-        <label class="workBreak">Break</label>
-        <div class="sliderContainer">
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
-            </label>
+    <div class="collapse" id="collapseExample">
+      <div class="card-body">
+        <div class="row">
+          
+          <label class="workBreak">Break</label>
+          <div class="sliderContainer">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+          </div>
+          <label class="continous">Continous</label>
         </div>
-        <label class="continous">Continous</label>
-      </div>
-      <div class="BreakTimer">
-          <div class="col-sm">
-              <label>Work</label>
-              <input type="time" step='1' min="00:00:00" max="20:00:00">
-          </div>
-          <div class="col-sm">
-            <Label>Break</Label> 
-            <input type="time" placeholder="HH:MM:SS" step='1' min="00:00:00" max="20:00:00">
-          </div>
-          <div class="col-sm">
-            <button type="button" class="btn btn-success submit">Submit</button> 
-          </div>
-      </div>
+        <div class="BreakTimer">
+            <div class="col-sm">
+                <div class=timeInput>
+                  <div class="row">
+                      <label class="inputLabel">Work</label>
+                      <input type="text" class="timeHolder timeHolder1" placeholder="HH">
+                      <label >:</label>
+                      <input type="text" class="timeHolder" placeholder="MM">
+                      <label >:</label>
+                      <input type="text" class="timeHolder" placeholder="SS">
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm">
+                <div class=timeInput>
+                  <div class="row">
+                      <label class="inputLabel2">Break</label>
+                      <input type="text" class=" timeHolder" placeholder="HH">
+                      <label >:</label>
+                      <input type="text" class="timeHolder" placeholder="MM">
+                      <label >:</label>
+                      <input type="text" class="timeHolder" placeholder="SS">
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <button type="button" class="btn btn-success submit">Submit</button> 
+            </div>
+        </div>
 
-    </div>
+      </div>
+  </div>
   </div>
 
      

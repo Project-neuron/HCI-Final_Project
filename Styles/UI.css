@@ -4,7 +4,7 @@ body {
   background-size: 1500px 1000px;
 }
 
-
+/* card */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -14,15 +14,49 @@ body {
     z-index:100;
     position: relative;
   }
+  
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  /* end */
+
   .values{
     margin-left: 90px;
     margin-bottom: 10px;
   }
   
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+/* input styling */
+.timeHolder{
+   width: 35px;
   }
-  
+.timeInput{
+    margin-left: 10px;
+  } 
+
+.inputLabel{
+    margin-right: 10px;
+
+  }
+  .inputLabel2{
+    margin-right: 9px;
+
+  }
+
+/* end */
+
+/* close button */ 
+
+.close-placement{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.close{
+  outline:none !important;
+}
+/* end */
+
   .container {
     padding: 2px 16px;
   }
@@ -45,9 +79,9 @@ body {
   margin-left: 20px;
 }
 
-input[type=time]::-webkit-datetime-edit-ampm-field {
-  display: none;
-}
+
+
+/* over lay  */
 .overlay {
   height: 100%;
   width: 0;
@@ -100,6 +134,7 @@ input[type=time]::-webkit-datetime-edit-ampm-field {
   }
 
 }
+/* end */
 
 /* slider with labels */ 
 
@@ -167,3 +202,5 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* end */
