@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url("/Resources/Screenshot\ \(18\).png");
-  background-size: 1500px 1000px;
+  background-image: url("/Resources/Screenshot.png");
+  background-size: 1000px 1000px;
 }
 
 /* card */
@@ -41,6 +41,9 @@ body {
   .inputLabel2{
     margin-right: 9px;
 
+  }
+  .colon{
+    
   }
 
 /* end */
