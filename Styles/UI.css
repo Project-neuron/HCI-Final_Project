@@ -1,7 +1,14 @@
+
+html{
+  background-image: url("/Resources/Screenshot.png");
+  height: 100%;
+  width:100%
+
+}
+
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url("/Resources/Screenshot.png");
-  background-size: 1000px 1000px;
+  
 }
 
 /* card */
@@ -19,7 +26,7 @@ body {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
-  /* end */
+  /* end card */
 
   .values{
     margin-left: 90px;
@@ -42,14 +49,17 @@ body {
     margin-right: 9px;
 
   }
-  .colon{
-    
-  }
+  
 
-/* end */
+/* end input styling*/
+
+
+.btn-control{
+  margin-left:10px;
+}
+
 
 /* close button */ 
-
 .close-placement{
   margin-left: 20px;
   margin-bottom: 20px;
@@ -58,7 +68,7 @@ body {
 .close{
   outline:none !important;
 }
-/* end */
+/* end close button */
 
   .container {
     padding: 2px 16px;
