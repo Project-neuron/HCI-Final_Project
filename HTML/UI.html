@@ -12,7 +12,7 @@
 <script src="../Scripts/TimerScrips.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/dist/easytimer.min.js"></script>
 </head>
-<body background="/Resources/Screenshot.png">
+<body>
 <div id="myNav" class="overlay">
 </div>
 
@@ -22,14 +22,14 @@
   <div class="card-header">
       <div class="close-placement"> 
           <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              <span aria-hidden="true">&times;</span>
+              <span aria-hidden="true" class="symbol">&xwedge;</span>
           </button>
       </div>
-        <div class="values" >00:00:00</div>
+        <div class="values" id="values" >00:00:00</div>
         <div class="buttonContainers" id="buttons">
             <button type="button" class="btn btn-warning">Pause</button>
             <button type="button" class="btn btn-success">Start</button> 
-            <button type="button" class="btn btn-danger">Reset  </button>
+            <button type="button" class="btn btn-danger">Reset</button>
         </div>
     </div>
     <div class="collapse" id="collapseExample">
@@ -51,9 +51,9 @@
                   <div class="row">
                       <label class="inputLabel">Work</label>
                       <input type="text" class="timeHolder timeHolder1" id="workHH" placeholder="HH">
-                      <label class="colon" >:</label>
+                      <label >:</label>
                       <input type="text" class="timeHolder" id="workMM" placeholder="MM">
-                      <label class="colon">:</label>
+                      <label >:</label>
                       <input type="text" class="timeHolder" id="workSS" placeholder="SS">
                   </div>
               </div>
@@ -70,9 +70,6 @@
                   </div>
               </div>
             </div>
-            <!-- <div class="col-sm">
-              <button type="button" class="btn btn-success submit">Submit</button> 
-            </div> -->
         </div>
 
       </div>

@@ -1,8 +1,4 @@
 
-html{
-  
-
-}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -37,6 +33,11 @@ body {
 /* input styling */
 .timeHolder{
    width: 35px;
+   border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  text-align: center;
   }
 .timeInput{
     margin-left: 10px;
@@ -44,10 +45,12 @@ body {
 
 .inputLabel{
     margin-right: 10px;
+    margin-left: 10px
 
   }
   .inputLabel2{
     margin-right: 9px;
+    margin-left: 10px
 
   }
   
@@ -103,7 +106,6 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #94220e;
   overflow-x: hidden;
   transition: 0.5s;
   opacity: 0.3;
@@ -153,12 +155,12 @@ body {
 /* slider with labels */ 
 
 .workBreak{
-  padding-right: 10px;
-  margin-left: 40px;
+  padding-right: 25px;
+  margin-left: 35px;
 }
 
 .continous{
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .sliderWithLabels{
@@ -180,7 +182,7 @@ body {
 
 
 .slider {
-  background-color: rgb(80, 96, 247);
+  background-color:	#FF81CF;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -202,7 +204,7 @@ body {
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #3697c2;
 }
 
 input:checked + .slider:before {
